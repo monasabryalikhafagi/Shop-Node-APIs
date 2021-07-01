@@ -1,5 +1,8 @@
-const router = express.Router();
+const express=require('express');
+const router=express.Router();
 const mongoose = require('mongoose');
+const Product = require('../models/product');
+const Order =require('../models/order');
 
 exports.getProducts= (req, res, next) => {
     Product.find()
